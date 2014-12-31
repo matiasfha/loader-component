@@ -1,4 +1,4 @@
-template = document._currentScript.ownerDocument.querySelector 'template#ekidz-loader'
+template = document._currentScript.ownerDocument.querySelector 'template#m-loader'
 prototype = Object.create HTMLElement.prototype, do ->
 	shadowRoot:
 		value:null
@@ -21,6 +21,6 @@ prototype = Object.create HTMLElement.prototype, do ->
 		value: ->
 			@className = 'show'
 
-Loader = document.registerElement 'ekidz-loader', prototype:prototype
+Loader = document.registerElement 'm-loader', prototype:prototype
 
 module?.exports = {Loader}
